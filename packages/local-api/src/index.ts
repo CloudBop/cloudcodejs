@@ -43,7 +43,7 @@ export const serve = (
       express.static(
         // express doesn't like symbolic link
         // "../node_modules/local-client/build"
-        packagePath
+        path.dirname(packagePath)
       )
     );
   }
