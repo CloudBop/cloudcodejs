@@ -38,6 +38,7 @@ export const serve = (
     const packagePath = require.resolve(
       "@cloudcodejs/local-client/build/index.html"
     );
+    console.log(`packagePath`, packagePath);
     app.use(
       express.static(
         // express doesn't like symbolic link
