@@ -13,6 +13,8 @@ export const serve = (
 
   const app = express();
 
+  console.log(`test`);
+
   // create routes
   app.use(createCellsRouter(filename, dir));
   console.log(useProxy);

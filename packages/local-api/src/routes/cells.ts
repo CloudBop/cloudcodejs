@@ -10,10 +10,10 @@ interface Cell {
 
 export const createCellsRouter = (filename: string, dir: string) => {
   const router = express.Router();
-  //
-  const fullPath = path.join(dir, filename);
   // body parse to json
   router.use(express.json());
+  //
+  const fullPath = path.join(dir, filename);
 
   router.get("/cells", async (req, res) => {
     try {
