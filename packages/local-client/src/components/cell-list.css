@@ -1,0 +1,8 @@
+.cell-list {
+  margin: 0 25px;
+  margin-bottom: 50vh;
+}
+/* stops draggable screen snapping */
+.react-draggable-transparent-selection .cell-list {
+  margin-bottom: 100vh;
+}
