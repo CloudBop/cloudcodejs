@@ -15,7 +15,7 @@ export const serve = (
 
   // create routes
   app.use(createCellsRouter(filename, dir));
-
+  console.log(useProxy);
   // if nothing found.... development mode
   if (useProxy) {
     app.use(

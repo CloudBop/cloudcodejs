@@ -8,9 +8,8 @@ interface Cell {
   type: "text" | "code";
 }
 
-const router = express.Router();
-
 export const createCellsRouter = (filename: string, dir: string) => {
+  const router = express.Router();
   //
   const fullPath = path.join(dir, filename);
   // body parse to json
