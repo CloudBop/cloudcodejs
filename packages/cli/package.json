@@ -1,6 +1,6 @@
 {
   "name": "cloudcodejs",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
