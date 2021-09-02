@@ -5,7 +5,7 @@ import { serve } from "@cloudcodejs/local-api";
 /**
  * crucial, (endUserConsumer === production) || (undefined === "development")
  */
-const isProduction = process.env.NODE === "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 export const serveCommand = new Command()
   // [square-brckets-optional]
@@ -27,7 +27,7 @@ export const serveCommand = new Command()
       const dir = path.join(process.cwd(), path.dirname(filename));
       // console.log(filename, options);
       console.log(`isProduction`, isProduction);
-      console.log(`process.env.NODE`, process.env.NODE);
+      console.log(`process.env.NODE_ENV`, process.env.NODE_ENV);
       await serve(
         parseInt(options.port),
         path.basename(filename),
