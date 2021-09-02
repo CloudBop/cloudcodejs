@@ -26,6 +26,8 @@ export const serveCommand = new Command()
       //eg notes/my-js-notes.js
       const dir = path.join(process.cwd(), path.dirname(filename));
       // console.log(filename, options);
+      console.log(`isProduction`, isProduction);
+      console.log(`process.env.NODE`, process.env.NODE);
       await serve(
         parseInt(options.port),
         path.basename(filename),
