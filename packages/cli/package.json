@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "@cloudcodejs/local-api": "^1.0.0",
-    "commander": "^8.1.0",
     "@types/node": "^16.7.10",
+    "commander": "^8.1.0",
     "esbuild": "0.8.26",
     "typescript": "^4.4.2"
   }
