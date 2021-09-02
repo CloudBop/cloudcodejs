@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cloudcodejs@/local-client": "^1.0.0"
+    "@cloudcodejs/local-client": "^1.0.0"
   },
   "devDependencies": {
     "@cloudcodejs/local-api": "^1.0.0",
