@@ -20,13 +20,13 @@ export const serveCommand = new Command()
     //default
     "4005"
   )
-  .action((filename = "notebook.js", options: { port: string }) => {
+  .action(async (filename = "notebook.js", options: { port: string }) => {
     try {
       // allows user to specific paths to filename as well as filename
       //eg notes/my-js-notes.js
       const dir = path.join(process.cwd(), path.dirname(filename));
       // console.log(filename, options);
-      serve(
+      await serve(
         parseInt(options.port),
         path.basename(filename),
         dir,
