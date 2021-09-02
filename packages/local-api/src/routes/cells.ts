@@ -22,7 +22,7 @@ export const createCellsRouter = (filename: string, dir: string) => {
       const result = await fs.readFile(fullPath, { encoding: "utf-8" });
       // parse cells out of data
       res.send(JSON.parse(result));
-    } catch (error) {
+    } catch (error: any) {
       // if error, no file exists
       if (error.code === "ENOENT") {
         // else create default settings
