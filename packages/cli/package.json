@@ -1,6 +1,6 @@
 {
   "name": "cloudcodejs",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
@@ -22,7 +22,7 @@
     "@cloudcodejs/local-client": "^1.0.11"
   },
   "devDependencies": {
-    "@cloudcodejs/local-api": "^1.0.13",
+    "@cloudcodejs/local-api": "^1.0.22",
     "@types/node": "^16.7.10",
     "commander": "^8.1.0",
     "esbuild": "0.8.26",

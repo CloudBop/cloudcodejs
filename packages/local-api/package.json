@@ -1,6 +1,6 @@
 {
   "name": "@cloudcodejs/local-api",
-  "version": "1.0.13",
+  "version": "1.0.22",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
